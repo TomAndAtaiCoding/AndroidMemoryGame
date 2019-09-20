@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidMemoryGame</string>
+    <string name="welcome_msg">Welcome</string>
+    <string name="start_btn_msg">Play</string>
+    <string name="score_p1_label">Player 1</string>
+    <string name="score_p2_label">Player 2</string>
 </resources>
