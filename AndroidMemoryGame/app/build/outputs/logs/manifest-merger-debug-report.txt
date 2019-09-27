@@ -56,6 +56,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/atai/
 		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
 		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:8:9-41
+	android:fullBackupContent
+		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:12:9-59
 	android:roundIcon
 		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
@@ -65,19 +67,19 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/atai/
 	android:theme
 		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.androidmemorygame.Game
-ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:12:9-51
+ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:13:9-51
 	android:name
-		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:12:19-39
+		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:13:19-39
 activity#com.example.androidmemorygame.MainActivity
-ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:15:9-20:20
 	android:name
-		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/src/main/AndroidManifest.xml:18:17-77
 	android:name

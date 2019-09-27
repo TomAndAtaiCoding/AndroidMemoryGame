@@ -4,4 +4,8 @@
     <string name="start_btn_msg">Play</string>
     <string name="score_p1_label">Player 1</string>
     <string name="score_p2_label">Player 2</string>
+    <string name="default_p1_name">Player 1</string>
+    <string name="default_p2_name">Player 2</string>
+    <string name="loss_msg">It seems our game has come to a close...</string>
+    <string name="round_prompt_label">No. of Rounds</string>
 </resources>

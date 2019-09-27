@@ -4,40 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Game">
+    tools:game=".Game">
 
     <Button
         android:id="@+id/cardA0"
         android:layout_width="65dp"
         android:layout_height="97dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player1Label" />
 
     <Button
-        android:id="@+id/CardA3"
-        android:layout_width="65dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardA2" />
-
-    <Button
         android:id="@+id/cardA4"
         android:layout_width="65dp"
         android:layout_height="97dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CardA3" />
+        app:layout_constraintTop_toBottomOf="@+id/cardA3" />
 
     <Button
         android:id="@+id/cardA2"
         android:layout_width="65dp"
         android:layout_height="97dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardA1" />
@@ -46,10 +37,19 @@
         android:id="@+id/cardA1"
         android:layout_width="65dp"
         android:layout_height="97dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardA0" />
+
+    <Button
+        android:id="@+id/cardA3"
+        android:layout_width="65dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardA2" />
 
     <TextView
         android:id="@+id/player1Label"
@@ -114,6 +114,7 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
+        android:tag="1,0"
         app:layout_constraintStart_toEndOf="@+id/cardA0"
         app:layout_constraintTop_toBottomOf="@+id/player1Label" />
 
@@ -123,6 +124,7 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
+        android:tag="3,0"
         app:layout_constraintStart_toEndOf="@+id/cardB0"
         app:layout_constraintTop_toBottomOf="@+id/player1Label" />
 
@@ -141,6 +143,8 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardC1"
         app:layout_constraintTop_toBottomOf="@+id/cardD0" />
 
@@ -168,6 +172,8 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardC3"
         app:layout_constraintTop_toBottomOf="@+id/cardD2" />
 
@@ -195,6 +201,8 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardC4"
         app:layout_constraintTop_toBottomOf="@+id/cardD3" />
 
@@ -208,20 +216,13 @@
         app:layout_constraintTop_toBottomOf="@+id/cardC2" />
 
     <Button
-        android:id="@+id/Button12"
-        android:layout_width="65dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/cardC2"
-        tools:layout_editor_absoluteY="363dp" />
-
-    <Button
         android:id="@+id/cardD2"
         android:layout_width="65dp"
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardC2"
         app:layout_constraintTop_toBottomOf="@+id/cardD1" />
 
@@ -231,7 +232,7 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/CardA3"
+        app:layout_constraintStart_toEndOf="@+id/cardA3"
         app:layout_constraintTop_toBottomOf="@+id/cardB2" />
 
     <Button
@@ -240,6 +241,9 @@
         android:layout_height="97dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:tag="4,0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardC0"
         app:layout_constraintTop_toBottomOf="@+id/player1Label" />
 
