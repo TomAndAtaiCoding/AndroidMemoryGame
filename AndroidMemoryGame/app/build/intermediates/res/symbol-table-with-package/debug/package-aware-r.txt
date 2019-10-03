@@ -661,6 +661,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable loss_shape
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -676,9 +677,7 @@ drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
-id Button12
 id CTRL
-id CardA3
 id FUNCTION
 id META
 id SHIFT
@@ -747,6 +746,7 @@ id buttonPanel
 id cardA0
 id cardA1
 id cardA2
+id cardA3
 id cardA4
 id cardB0
 id cardB1
@@ -801,6 +801,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lossMsgBox
 id message
 id middle
 id multiply
@@ -814,6 +815,7 @@ id off
 id on
 id p1NameBox
 id p2NameBox
+id p2NameBox2
 id packed
 id parent
 id parentPanel
@@ -821,15 +823,19 @@ id percent
 id playButton
 id player1Label
 id player2Label
+id playerLostBox
 id progress_circular
 id progress_horizontal
 id radio
 id right
 id right_icon
 id right_side
+id roundPromptLabel
 id scoreBox
 id scoreBox1
 id scoreBox2
+id scoreSummaryBox1
+id scoreSummaryBox2
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -844,6 +850,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekBar
 id select_dialog_listview
 id shortcut
 id showCustom
@@ -873,6 +880,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView2
 id time
 id title
 id titleDividerNoCustom
@@ -930,6 +938,8 @@ layout abc_tooltip
 layout activity_game
 layout activity_main
 layout custom_dialog
+layout layout_game_table
+layout loss_popup
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -972,6 +982,8 @@ string abc_toolbar_collapse_description
 string app_name
 string default_p1_name
 string default_p2_name
+string loss_msg
+string round_prompt_label
 string score_p1_label
 string score_p2_label
 string search_menu_title

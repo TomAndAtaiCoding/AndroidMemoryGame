@@ -84,7 +84,7 @@ class Turn {
 
             if (round.solvedCards == 10)
             {
-                //TODO advance tound
+                //TODO advance round
             }
         }
 

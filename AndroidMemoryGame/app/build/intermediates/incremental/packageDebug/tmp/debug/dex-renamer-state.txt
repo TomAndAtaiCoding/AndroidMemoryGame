@@ -1,7 +1,7 @@
-#Sun Sep 22 13:14:37 IDT 2019
-base.0=/home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Thu Oct 03 16:31:23 IDT 2019
+base.0=C\:\\Users\\dotan\\Documents\\GitHub\\AndroidMemoryGame\\AndroidMemoryGame\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/atai/Documents/GitHub/AndroidMemoryGame/AndroidMemoryGame/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=C\:\\Users\\dotan\\Documents\\GitHub\\AndroidMemoryGame\\AndroidMemoryGame\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

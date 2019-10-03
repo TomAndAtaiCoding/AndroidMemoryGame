@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText p1NameBox;
     EditText p2NameBox;
     //TODO add difficulty selector
+    //TODO create icon (preferably the icon for EverApp)
 
     /**
      * The activity's initializer, getting the name boxes from the activity.

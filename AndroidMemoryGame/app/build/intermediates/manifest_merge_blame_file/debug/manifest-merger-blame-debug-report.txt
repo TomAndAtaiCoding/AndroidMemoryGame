@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\dotan\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\dotan\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:fullBackupContent="@xml/backup_descriptor"
 15-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:12:9-59
@@ -27,25 +27,26 @@
 18-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.androidmemorygame.Game" />
-21-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:13:9-51
-21-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:13:19-39
-22        <activity android:name="com.example.androidmemorygame.MainActivity" >
-22-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:15:9-20:20
-22-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:15:19-47
-23            <intent-filter>
-23-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:16:13-19:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:17:17-69
-24-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:17:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:18:17-77
-26-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:18:27-74
-27            </intent-filter>
-28        </activity>
-29    </application>
-30
-31</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.androidmemorygame.Game" />
+22-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:13:9-51
+22-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:13:19-39
+23        <activity android:name="com.example.androidmemorygame.MainActivity" >
+23-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:15:9-20:20
+23-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:15:19-47
+24            <intent-filter>
+24-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:16:13-19:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:17:17-69
+25-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:17:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:18:17-77
+27-->C:\Users\dotan\Documents\GitHub\AndroidMemoryGame\AndroidMemoryGame\app\src\main\AndroidManifest.xml:18:27-74
+28            </intent-filter>
+29        </activity>
+30    </application>
+31
+32</manifest>
