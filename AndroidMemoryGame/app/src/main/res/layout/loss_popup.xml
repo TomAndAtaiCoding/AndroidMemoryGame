@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/loss_msg"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/lossMsgBox"
+        android:layout_width="240dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/loss_msg"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/playerLostBox"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/lossMsgBox"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:id="@+id/scoreSummaryBox1"
+        android:layout_width="135dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/playerLostBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/scoreSummaryBox2"
+        android:layout_width="135dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/playerLostBox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="45dp" />
+</RelativeLayout>
