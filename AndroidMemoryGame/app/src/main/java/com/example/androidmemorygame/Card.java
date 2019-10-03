@@ -31,17 +31,14 @@ class Card {
     /**
      * A list of all the value pairs, used to construct and reconstruct {@link #valuesToSet}.
      */
-    //TODO Make the pairs more dynamic to allow difficulty adjustment.
-    static private final List<Integer> possibleValues = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    static private int size;
 
     /**
      * The list of all values that still don't have a matching card. Initialized as
-     * the list of all values in the game - combination of twice the
-     * {@link #possibleValues list of possible values}.
+     * the list of all values in the game - combination of twice the two values for each number
+     * up to the deck's {@link #size} - creating the game's pairs.
      */
-    static private final ArrayList<Integer> valuesToSet =
-            (ArrayList<Integer>)Stream.concat(possibleValues.stream(), possibleValues.stream()).
-                    collect(Collectors.toList());
+    static private ArrayList<Integer> valuesToSet;
 
     /**
      * The list of all cards in the game. Every card constructed will be added here.
@@ -117,10 +114,13 @@ class Card {
      * Resets the values of all cards in the game to 0 and their text to an empty string,
      * as well as resetting {@link #valuesToSet}.
      */
-    static private void reset() {
+    static void reset() {
         valuesToSet.clear();
-        valuesToSet.addAll(possibleValues);
-        valuesToSet.addAll(possibleValues);
+
+        for (int i = 0; i < size; i++) {
+            valuesToSet.add(i);
+            valuesToSet.add(i);
+        }
 
         for (int i = 0; i < deck.size(); i++) {
             deck.get(i).value = 0;

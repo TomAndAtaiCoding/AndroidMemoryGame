@@ -31,4 +31,6 @@ public class Helpers  {
     public  static void typeAnimation(TextView view, String msg) throws InterruptedException {
         typeAnimation(view, msg, 300);
     }
+
+
 }

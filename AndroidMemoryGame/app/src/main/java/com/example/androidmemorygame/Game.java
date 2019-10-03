@@ -101,7 +101,11 @@ public class Game extends AppCompatActivity {
         scoreBoxes[0] = findViewById(R.id.scoreBox1);
         scoreBoxes[1] = findViewById(R.id.scoreBox2);
 
+        //Reset cards' values
+        Card.reset();
 
+
+        //Construct player.
         for (int i = 0; i < PLAYER_NUM; i++) {
                 String name = getIntent().getStringExtra("p" + i + "Name");
                 players[i] = new Player(name, i + 1, this, playerLabels[i], scoreBoxes[i]);
