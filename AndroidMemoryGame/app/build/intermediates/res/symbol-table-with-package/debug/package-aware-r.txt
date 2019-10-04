@@ -776,6 +776,7 @@ id customPanel
 id decor_content_parent
 id default_activity_button
 id dialog_button
+id difficultySlider
 id dimensions
 id direct
 id disableHome
@@ -815,7 +816,6 @@ id off
 id on
 id p1NameBox
 id p2NameBox
-id p2NameBox2
 id packed
 id parent
 id parentPanel
@@ -830,6 +830,7 @@ id radio
 id right
 id right_icon
 id right_side
+id roundCount
 id roundPromptLabel
 id scoreBox
 id scoreBox1
@@ -850,7 +851,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id seekBar
 id select_dialog_listview
 id shortcut
 id showCustom
