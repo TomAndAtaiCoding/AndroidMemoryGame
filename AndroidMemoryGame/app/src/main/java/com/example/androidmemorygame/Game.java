@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * A game activity, visually composed of score boxes, labels and cards (buttons). <p><p>
@@ -39,24 +43,12 @@ public class Game extends AppCompatActivity {
      */
     TextView[] scoreBoxes = new TextView[PLAYER_NUM];
 
-    /**
-     * An array containing all the UI buttons which correspond to the game cards.
-     *
-     * <ul><i>NOTE: this array exists solely because it was easier to type instead of outright
-     * creating {@link Card} objects. However there probably is a way to algoritmically iterate through
-     * the buttons. Might require converting to {@link android.widget.TableLayout}</i></ul>
-     */
-    Button[][] cardButtons = //TODO - Change to table layout and create the cards with looping instead.
-            {{findViewById(R.id.cardA0), findViewById(R.id.cardB0), findViewById(R.id.cardC0), findViewById(R.id.cardD0)},
-             {findViewById(R.id.cardA1), findViewById(R.id.cardB1), findViewById(R.id.cardC1), findViewById(R.id.cardD1)},
-             {findViewById(R.id.cardA2), findViewById(R.id.cardB2), findViewById(R.id.cardC2), findViewById(R.id.cardD2)},
-             {findViewById(R.id.cardA3), findViewById(R.id.cardB3), findViewById(R.id.cardC3), findViewById(R.id.cardD3)},
-             {findViewById(R.id.cardA4), findViewById(R.id.cardB4), findViewById(R.id.cardC4), findViewById(R.id.cardD4)}};
 
     /**
-     * The array of all cards in the game. Two dimensional in order to represent the board.
+     * The list of all cards in the game.
      */
-    Card[][] cards = new Card[5][4];
+    ArrayList<Card> deck = new ArrayList<>();
+
 
 
 
@@ -88,34 +80,39 @@ public class Game extends AppCompatActivity {
 
         //Start Activity
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
-
+        setContentView(R.layout.layout_game_table);
         //Get names from previous screen
         String p1Name = getIntent().getStringExtra("p1Name");
         String p2Name = getIntent().getStringExtra("p2Name");
 
         //Get labels and scoreBoxes
-        playerLabels[0] = findViewById(R.id.player1Label);
-        playerLabels[1] = findViewById(R.id.player2Label);
-
-        scoreBoxes[0] = findViewById(R.id.scoreBox1);
-        scoreBoxes[1] = findViewById(R.id.scoreBox2);
+        playerLabels[0] = findViewById(R.id.);
+//        playerLabels[1] = findViewById(R.id.player2Label);
+//
+//        scoreBoxes[0] = findViewById(R.id.scoreBox1);
+//        scoreBoxes[1] = findViewById(R.id.scoreBox2);
 
         //Reset cards' values
         Card.reset();
 
 
-        //Construct player.
-        for (int i = 0; i < PLAYER_NUM; i++) {
-                String name = getIntent().getStringExtra("p" + i + "Name");
-                players[i] = new Player(name, i + 1, this, playerLabels[i], scoreBoxes[i]);
+        TableLayout layout = (TableLayout)R.id.
+        for (int i = 0; i < difficulty.size; i++) {
+            TableRow newRow = new TableRow(this);
+            newRow.setLayoutParams(
+                    new TableLayout.LayoutParams(
+                            TableLayout.LayoutParams.MATCH_PARENT,
+                            TableLayout.LayoutParams.WRAP_CONTENT));
+
+            for (int j = 0; j < difficulty.size; j++) {
+                findViewById(R.id.scoreSummaryBox1);
+            }
         }
 
-        //Construct the card array
-        for (int i = 0; i < cardButtons.length; i++) {
-            for (int j = 0; j < cardButtons[0].length; j++) {
-                cards[i][j] = new Card(cardButtons[i][j], this);
-            }
+        //Construct player.
+        for (int i = 0; i < PLAYER_NUM; i++) {
+            String name = getIntent().getStringExtra("p" + i + "Name");
+            players[i] = new Player(name, i + 1, this, playerLabels[i], scoreBoxes[i]);
         }
 
         //Set current turn
@@ -167,30 +164,31 @@ public class Game extends AppCompatActivity {
      */
     enum Difficulty
     {
-        EASY(3500, 30), //3.5 seconds to see cards
-        NORMAL(2000, 20), //2 s
-        HARD(900, 10); //0.9 s
+        EASY(3500, 30, 3),
+        NORMAL(2000, 20, 4),
+        HARD(900, 10, 5);
 
+        /**
+         * The time, in milliseconds, hat the player can see the card's values.
+         */
         long wait;
+
+        /**
+         * The amount of health each player starts with.
+         */
         int health;
 
-        Difficulty(long wait, int health)
+        /**
+         * The size of the board - size x size cards.
+         */
+        int size;
+
+
+        Difficulty(long wait, int health, int size)
         {
             this.wait = wait;
             this.health = health;
+            this.size = size;
         }
-    }
-
-    /**
-     * @return The sum of all the players' scores.
-     */
-    int sumOfScores() {
-        int sum = 0;
-
-        for (Player player : players) {
-            sum += player.getScore();
-        }
-
-        return sum;
     }
 }
