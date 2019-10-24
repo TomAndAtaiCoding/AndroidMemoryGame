@@ -15,7 +15,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     EditText p1NameBox;
     EditText p2NameBox;
-    //TODO add difficulty selector
+    //TODO add difficulty selector labels
+    //TODO check for change in difficulty selector and change accordingly
     //TODO create icon (preferably the icon for EverApp)
 
     /**

@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:game=".Game">
 
+    <TextView
+        android:id="@+id/healthBox2"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="10"
+        app:layout_constraintEnd_toStartOf="@+id/player2Label"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/player1Label"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/cardA0"
         android:layout_width="65dp"
@@ -255,5 +268,18 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/cardA1"
         app:layout_constraintTop_toBottomOf="@+id/cardB0" />
+
+    <TextView
+        android:id="@+id/healthBox1"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="10"
+        app:layout_constraintEnd_toStartOf="@+id/player2Label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/player1Label"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -857,6 +857,7 @@ id showCustom
 id showHome
 id showTitle
 id spacer
+id splashScreen
 id split_action_bar
 id spread
 id spread_inside

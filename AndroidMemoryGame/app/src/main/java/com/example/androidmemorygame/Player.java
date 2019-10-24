@@ -32,7 +32,7 @@ class Player {
     /**
      * The box displaying the player's health
      */
-    private TextView healthBox; //TODO Add health boxes to the activities.
+    private TextView healthBox;
 
     /**
      * The game the player is a part of.
